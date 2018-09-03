@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">DatingAppDemo</string>
+    <string name="person_image">Person\'s Image</string>
+    <string-array name="profile_labels">
+        <item>Age</item>
+        <item>Location</item>
+        <item>Intent</item>
+        <item>Profession</item>
+        <item>Height</item>
+        <item>Education</item>
+        <item>Do you have children?</item>
+        <item>For</item>
+        <item>Body Type</item>
+        <item>Personality</item>
+        <item>Religion</item>
+        <item>Smoker</item>
+        <item>Ethnicity</item>
+        <item>I am seeking a</item>
+        <item>Do you want children?</item>
+        <item>Marital Status</item>
+        <item>Do you drink?</item>
+        <item>Do you do drugs?</item>
+        <item>Do you have a car?</item>
+        <item>Sign</item>
+        <item>Hair</item>
+        <item>Eye Color</item>
+        <item>Pets</item>
+        <item>Second Language</item>
+        <item>Gender</item>
+        <item>Longest Relationship</item>
+        <item>How ambitious are you?</item>
+    </string-array>
+
+    <string-array name="profile_values">
+        <item>18</item>
+        <item>Delhi</item>
+        <item>Wants a relationship</item>
+        <item>Engineer</item>
+        <item>5'5"(165cm)</item>
+        <item>Masters degree</item>
+        <item>No</item>
+        <item>Friends</item>
+        <item>A Few Extra Pounds</item>
+        <item>Intellectual</item>
+        <item>Hindu</item>
+        <item>No</item>
+        <item>Indian</item>
+        <item>Woman</item>
+        <item>Prefer Not To Say</item>
+        <item>Single</item>
+        <item>No</item>
+        <item>No</item>
+        <item>Yes</item>
+        <item>Capricorn</item>
+        <item>Black</item>
+        <item>Brown</item>
+        <item>No Pets</item>
+        <item>English</item>
+        <item>Male</item>
+        <item>Over 4 years</item>
+        <item>Ambitious</item>
+    </string-array>
+
+</resources>
