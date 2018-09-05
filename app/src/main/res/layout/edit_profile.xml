@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tb"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_profile_card_view"
+                app:contentPaddingTop="20dp"
+                app:contentPaddingBottom="20dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#fafafa">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile!!"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#3641ba"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Gender"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/gender"
+                            style="@style/edit_profile_row_values"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/gender" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Seeking"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/seeking"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"
+                            android:entries="@array/seeking"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Height"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/height"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"
+                            android:entries="@array/ownACar"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="I Am Looking For"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/lookingFor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Hair Color"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/hairColor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Body Type"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/bodyType"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Do You Own A Car?"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/ownCar"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"
+                            android:entries="@array/ownACar"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Describe your personality in one word"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/personality"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Second Language"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/language"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="How ambitious are you?"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/ambitious"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Education"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/education"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Do you want children?"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/wantChildren"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Do you smoke?"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/smoke"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Do you drink?"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/drink"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Religion"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/religion"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Do you have pets?"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/pets"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:text="Eye color"
+                            style="@style/edit_profile_row_labels" />
+
+                        <Spinner
+                            android:id="@+id/eyeColor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        style="@style/edit_profile_row">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:labelFor="@id/profession"
+                            android:text="Your Profession"
+                            style="@style/edit_profile_row_labels" />
+
+                        <EditText
+                            android:id="@+id/profession"
+                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:inputType="text"
+                            style="@style/edit_profile_row_values"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_profile_card_view"
+                app:contentPaddingTop="20dp"
+                app:contentPaddingBottom="20dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#fafafa">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="When it comes to dating what best describes your intent?"
+                        style="@style/edit_profile_labels"/>
+
+                    <Spinner
+                        android:id="@+id/dating_intent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What is the longest relationship you have been in?"
+                        style="@style/edit_profile_labels"/>
+
+                    <Spinner
+                        android:id="@+id/longest_relationship"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First Name:"
+                        style="@style/edit_profile_labels"/>
+
+                    <EditText
+                        android:id="@+id/name"
+                        style="@style/edit_profile_values"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:minEms="10" />
+
+                    <Spinner
+                        android:id="@+id/show_name_on_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Income"
+                        style="@style/edit_profile_labels"/>
+
+                    <Spinner
+                        android:id="@+id/income"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Family"
+                        style="@style/edit_profile_labels"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My birth father and mother are:"
+                        style="@style/edit_profile_labels"/>
+
+                    <Spinner
+                        android:id="@+id/birth_parents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Would you date someone who has kids?"
+                        style="@style/edit_profile_labels"/>
+
+                    <Spinner
+                        android:id="@+id/dateSomeOneHasKids"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Would you date someone who smokes?"
+                        style="@style/edit_profile_labels"/>
+
+                    <Spinner
+                        android:id="@+id/dateSomeOneWhoSmokes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Would you date someone that has BBW or a few extra pounds selected as a body type?"
+                        style="@style/edit_profile_labels" />
+
+                    <Spinner
+                        android:id="@+id/dateFewExtraPounds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/edit_profile_card_view"
+                app:contentPaddingTop="20dp"
+                app:contentPaddingBottom="20dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#fafafa">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Headline (ex. looking for me?)"
+                        style="@style/edit_profile_labels"/>
+
+                    <EditText
+                        android:id="@+id/headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"
+                        android:minEms="10"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description - (Minimum of 100 characters)"
+                        style="@style/edit_profile_labels"
+                        android:layout_marginTop="@dimen/edit_profile_label_margin_top" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For your own safety, don not include your name, phone number or address."
+                        style="@style/edit_profile_labels"
+                        android:textStyle="bold"/>
+
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:inputType="text"
+                        android:lines="10"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Interests - (Separate interests with commas)"
+                        style="@style/edit_profile_labels"
+                        android:layout_marginTop="@dimen/edit_profile_label_margin_top" />
+
+                    <EditText
+                        android:id="@+id/interests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="10"
+                        android:inputType="text"
+                        style="@style/edit_profile_values"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conversation Starters"
+                        android:layout_marginTop="@dimen/edit_profile_label_margin_top"
+                        style="@style/edit_profile_labels"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Every Relationship starts with a conversation. Tell us what you want to talk about."
+                        style="@style/edit_profile_labels"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <EditText
+                        android:id="@+id/conversationStarter"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:inputType="text"
+                        android:lines="10"
+                        style="@style/edit_profile_values"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birthdate"
+                        style="@style/edit_profile_labels"
+                        android:layout_marginTop="@dimen/edit_profile_label_margin_top"/>
+
+                    <Spinner
+                        android:id="@+id/month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"
+                        android:entries="@array/month"
+                        android:layout_marginTop="10dp"/>
+
+                    <Spinner
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"
+                        android:entries="@array/day"
+                        android:layout_marginTop="10dp"/>
+
+                    <Spinner
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edit_profile_values"
+                        android:entries="@array/year"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <Button
+                        android:id="@+id/saveNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save My Profile Now!"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

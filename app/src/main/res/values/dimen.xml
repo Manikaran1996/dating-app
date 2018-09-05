@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="signup_boundary_margin_edittext">20dp</dimen>
+    <dimen name="signup_top_margin_edittext">10dp</dimen>
+
+</resources>
