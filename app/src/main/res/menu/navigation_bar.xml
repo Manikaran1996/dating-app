@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/profile"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Profile" />
+
+        <item android:id="@+id/messages"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Messages" />
+
+        <item android:id="@+id/willRespond"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Will Respond" />
+
+        <item android:id="@+id/search"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Search" />
+
+        <item android:id="@+id/nearBy"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Nearby" />
+
+        <item android:id="@+id/myMatches"
+            android:icon="@mipmap/ic_launcher"
+            android:title="My Matches" />
+
+        <item android:id="@+id/viewedMe"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Viewed Me" />
+
+        <item android:id="@+id/meetMe"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Meet Me" />
+
+        <item android:id="@+id/favorites"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Favorites" />
+
+    </group>
+</menu>

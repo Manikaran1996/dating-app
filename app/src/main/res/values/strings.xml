@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">DatingAppDemo</string>
     <string name="person_image">Person\'s Image</string>
+    <string name="username">mani3210</string>
     <string-array name="profile_labels">
         <item>Age</item>
         <item>Location</item>

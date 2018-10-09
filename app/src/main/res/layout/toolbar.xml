@@ -12,6 +12,7 @@
         android:layout_height="56dp"
         app:title="@string/app_name"
         android:background="@color/colorPrimary"
+
         app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"/>
 
 </android.support.design.widget.AppBarLayout>
